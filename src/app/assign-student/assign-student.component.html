@@ -1,0 +1,26 @@
+
+<div class="col-md-6 offset-md-3">
+    <br>
+    
+    <h3>Assign Student to  Course</h3>
+    
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+    <label>Student Id:</label>
+    <input type="text" class="form-control" id="stdId"
+     [(ngModel)]="assignment.stdId" name="stdId">
+    </div>
+    
+    <div class="form-group">
+        <label>Course Id:</label>
+        <input type="text" class="form-control" id="corId"
+         [(ngModel)]="assignment.corId" name="corId">
+    </div>
+  
+    <br>
+    <button class="btn btn-success" type="submit">submit</button>
+    
+    </form>
+    
+    </div>
+    

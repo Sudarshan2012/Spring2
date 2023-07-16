@@ -1,0 +1,29 @@
+<h2>Student list</h2>
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Student ID:</th>
+<th>Student FirstName:</th>
+<th>Student LastName:</th>
+<th>Mobile:</th>
+<th>Email:</th>
+<th>Address:</th>
+<th>Actions:</th>
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor="let student of  students">
+<td>{{student.dtosid}}</td>
+<td>{{student.dtofname}}</td>
+<td>{{student.dtolname}}</td>
+<td>{{student.dtomobile}}</td>
+<td>{{student.dtoemail}}</td>
+<td>{{student.dtoaddress}}</td>
+<td><button (click)="updateStudent(student.dtosid)" class="btn btn-info">
+    Update</button></td>
+ <td><button (click)="deleteStudent(student.dtosid)" class="btn btn-danger">
+    Delete</button></td>
+   {{message}}
+</tr>
+</tbody>
+<table>
